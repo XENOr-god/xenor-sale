@@ -1,0 +1,12 @@
+[programs.localnet]
+sale = "REPLACE_WITH_PROGRAM_ID"
+
+[registry]
+url = "https://anchor.project-serum.com"
+
+[provider]
+cluster = "mainnet"
+wallet = "~/.config/solana/mainnet-deployer.json"
+
+[workspace]
+members = ["programs/sale"]

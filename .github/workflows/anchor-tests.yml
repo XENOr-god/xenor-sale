@@ -1,0 +1,24 @@
+name: Anchor tests
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - name: Install solana
+        run: |
+          sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
+          export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+      - name: Install Anchor
+        run: |
+          npm i -g @project-serum/anchor-cli
+      - name: Run anchor tests
+        run: |
+          cd anchor-programs/sale
+          anchor test
