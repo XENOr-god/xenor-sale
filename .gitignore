@@ -25,3 +25,7 @@ idl
 
 # macOS
 .DS_Store
+target/
+node_modules/
+*.log
+.DS_Store
