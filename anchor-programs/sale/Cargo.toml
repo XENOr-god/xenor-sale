@@ -1,12 +1,9 @@
-[package]
-name = "xenor-sale"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+members = [
+  "programs/sale"
+]
+resolver = "2"
 
-[lib]
-name = "sale"
-crate-type = ["cdylib", "lib"]
+[profile.release]
+overflow-checks = true
 
-[dependencies]
-anchor-lang = { version = "0.31.0", features = ["init-if-needed"] }
-anchor-spl = "0.31.0"
