@@ -1,0 +1,7 @@
+[workspace]
+members = [
+  "sale/programs/sale"
+]
+
+[profile.release]
+overflow-checks = true
