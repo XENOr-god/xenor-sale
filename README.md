@@ -1,6 +1,6 @@
 # XENØr — Sale (bonding curve prototype)
 
-⚠️ Status: archived experiment
+ Status: archived experiment
 
 This repository contains an early bonding-curve token sale prototype for the XENØr project.
 
