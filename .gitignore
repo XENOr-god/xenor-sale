@@ -29,3 +29,11 @@ target/
 node_modules/
 *.log
 .DS_Store
+
+# Local audit artifacts
+.env.example.bak
+website/analysis-report.txt
+website/audit.json
+website/cargo-metadata.json
+website/deep_dive_report.tar.gz
+website/tools/

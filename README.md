@@ -1,32 +1,31 @@
-# XENØr — Sale (bonding curve prototype)
+# XENØr Sale
 
-> Archived experimental sale infrastructure for earlier XENØr research. Not the current primary project surface.
+Archived Solana bonding-curve sale prototype for the XENØr research stack.
 
- Status: archived experiment
+## Status
 
-This repository contains an early bonding-curve token sale prototype for the XENØr project.
+This repository is archived. It is kept public as a research record and is not the current XENØr launch path.
 
-The system was originally designed as a custom Solana mint-on-demand bonding curve sale using Anchor.
-It is now kept as a research and development artifact.
+## Repository Contents
 
-## Repository contents
+- `anchor-programs/sale` — Anchor-based sale program prototype
+- `website` — legacy Next.js frontend prototype
+- `scripts` — operational helpers for mint and submission flow
+- `docs` — notes, checklists, and security guidance
 
-- Anchor sale program (mint-on-demand bonding curve) → `anchor-programs/sale`
-- Next.js frontend prototype → `website`
-- Scripts for mint creation and pump.fun submission → `scripts`
-- Documentation and security checklist → `docs`
+## Boundaries
 
-## Notes
+- Do not treat this repository as the canonical public surface.
+- Do not treat this program as production-ready.
+- Prototype controls and operational assumptions require a fresh audit before any reuse.
+- The current XENØr public surface lives in `xenor-site`.
 
-This repository represents an experimental implementation that was intended for Solana mainnet deployment.
+## Related Repositories
 
-The current XENØr launch path does **not** use this contract.
-The repository remains public as a development record of the bonding curve prototype.
+- [`xenor-core`](https://github.com/XENOr-god/xenor-core) — deterministic execution layer
+- [`xenor-sim`](https://github.com/XENOr-god/xenor-sim) — validation and simulation layer
+- [`xenor-site`](https://github.com/XENOr-god/xenor-site) — canonical public website and repository map
 
-## Warning
+## Security Note
 
-Do not deploy this program to mainnet without:
-
-- a full security audit
-- extensive local testing (`anchor test`)
-- proper multisig and upgrade authority configuration
+Do not deploy this repository to mainnet without a fresh security review, local integration testing, and explicit operational controls for treasury, upgrade authority, and launch governance.
