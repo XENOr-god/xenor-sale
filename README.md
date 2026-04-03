@@ -8,7 +8,8 @@ point.
 ## Status
 
 Archived / historical only. This repository is not the current XENOr launch
-path and should not be treated as active infrastructure.
+path, GitHub now treats it as read-only, and it should not be treated as active
+infrastructure.
 
 ## Why This Repo Exists
 
@@ -65,4 +66,4 @@ controls, and explicit governance decisions.
 
 ## License
 
-See the repository [LICENSE](LICENSE).
+A standalone license file is published in this repository. See [LICENSE](LICENSE).
