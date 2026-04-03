@@ -1,31 +1,68 @@
-# XENØr Sale
+# xenor-sale
 
-Archived Solana bonding-curve sale prototype for the XENØr research stack.
+`xenor-sale` is an archived Solana sale prototype kept as historical XENOr
+research. It is public so prior launch-path exploration remains inspectable,
+not because it is the active product, infrastructure, or recommended starting
+point.
 
 ## Status
 
-This repository is archived. It is kept public as a research record and is not the current XENØr launch path.
+Archived / historical only. This repository is not the current XENOr launch
+path and should not be treated as active infrastructure.
 
-## Repository Contents
+## Why This Repo Exists
 
-- `anchor-programs/sale` — Anchor-based sale program prototype
-- `website` — legacy Next.js frontend prototype
-- `scripts` — operational helpers for mint and submission flow
-- `docs` — notes, checklists, and security guidance
+This repository exists as a record of earlier sale and launch experiments:
 
-## Boundaries
+- Anchor-based sale program prototypes
+- legacy website flows
+- operational scripts
+- notes, checklists, and security guidance
 
-- Do not treat this repository as the canonical public surface.
-- Do not treat this program as production-ready.
-- Prototype controls and operational assumptions require a fresh audit before any reuse.
-- The current XENØr public surface lives in `xenor-site`.
+Keeping it public preserves context without mixing historical launch work into
+the active XENOr stack.
+
+## Relationship to the XENOr Stack
+
+- `xenor-site` is the canonical public surface for the active stack
+- `xenor-core` is the active deterministic execution/core systems layer
+- `xenor-sim` is the active scenario and validation layer
+- `xenor-engine` is the active deterministic engine and replay/snapshot
+  substrate
+- `xenor-sale` is historical only
+
+## Quick Start / Local Inspection
+
+There is no recommended active development path in this repository.
+
+If you need to inspect historical work:
+
+- review [`docs/`](docs) first for context and security notes
+- inspect [`anchor-programs/sale`](anchor-programs/sale) as a prototype, not a
+  production-ready program
+- inspect [`website`](website) only as a legacy frontend record
+
+Do not deploy or reuse this repository without a fresh audit, new operational
+controls, and explicit governance decisions.
+
+## Repository Boundaries / Non-goals
+
+- This is not the canonical public surface. Use `xenor-site` instead.
+- This is not current launch infrastructure.
+- This is not a maintained Solana program.
+- This is not a substitute for active protocol, simulation, or engine work.
 
 ## Related Repositories
 
-- [`xenor-core`](https://github.com/XENOr-god/xenor-core) — deterministic execution layer
-- [`xenor-sim`](https://github.com/XENOr-god/xenor-sim) — validation and simulation layer
-- [`xenor-site`](https://github.com/XENOr-god/xenor-site) — canonical public website and repository map
+- [`xenor-site`](https://github.com/XENOr-god/xenor-site) — canonical public
+  surface and repository map
+- [`xenor-core`](https://github.com/XENOr-god/xenor-core) — active deterministic
+  execution/core systems layer
+- [`xenor-sim`](https://github.com/XENOr-god/xenor-sim) — active scenario and
+  validation layer
+- [`xenor-engine`](https://github.com/XENOr-god/xenor-engine) — active
+  deterministic engine and replay/snapshot substrate
 
-## Security Note
+## License
 
-Do not deploy this repository to mainnet without a fresh security review, local integration testing, and explicit operational controls for treasury, upgrade authority, and launch governance.
+See the repository [LICENSE](LICENSE).
